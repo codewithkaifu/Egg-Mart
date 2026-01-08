@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>EggMart — Fresh Eggs Delivered</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <!-- THEME TOGGLE BUTTON -->
+      <button id="themeToggle">🌙</button>
+
+      <div class="logo">🥚 EggMart</div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Cart</a>
+        <button class="admin-btn">Admin</button>
+      </nav>
+    </header>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Fresh Eggs, <br />Delivered Daily</h1>
+        <p>Premium farm eggs with quality you can trust.</p>
+        <button class="primary-btn">Shop Eggs</button>
+      </div>
+
+      <div class="hero-image">
+        <img
+        src="https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+        alt="Egg"/>
+      </div>
+    </section>
+
+    <!-- trust -->
+    <section class="trust">
+      <div class="trust-card">🥚 Farm Fresh</div>
+      <div class="trust-card">🚚 Fast Delivery</div>
+      <div class="trust-card">✅ Quality Checked</div>
+      <div class="trust-card">💰 Fair Pricing</div>
+    </section>
+
+    <!-- shopp -->
+    <section class="shop">
+      <div class="shop-header">
+        <h2>Our Fresh Eggs</h2>
+        <p>Carefully selected eggs from trusted farms</p>
+      </div>
+
+      <div class="shop-grid">
+        <div class="product-card">
+          <img
+            src="https://media.istockphoto.com/id/924323032/photo/wooden-basket-with-eggs.webp?a=1&b=1&s=612x612&w=0&k=20&c=WILrH_Z8O54GghhU9fmU-fpHUo3YPfEhXeUkZzIdsyc="
+            alt=""
+          />
+          <h3>Farm White Eggs</h3>
+          <p class="price">₹10 / egg</p>
+          <button class="primary-btn">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1498654077810-12c21d4d6dc3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGVnZ3xlbnwwfHwwfHx8MA%3D%3D"
+            alt=""
+          />
+          <h3>Brown Eggs</h3>
+          <p class="price">₹15 / egg</p>
+          <button class="primary-btn">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1586716246449-f7419351c8f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8b3JnYW5pYyUyMGVnZ3xlbnwwfHwwfHx8MA%3D%3D"
+            alt=""
+          />
+          <h3>Organic Eggs</h3>
+          <p class="price">₹18 / egg</p>
+          <button class="primary-btn">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADMIN ACTIONS -->
+    <div class="admin-actions">
+       <!-- <input type="text" id="updateItemImage" placeholder="New image URL (optional)"> -->
+      <!-- ADD NEW ITEM -->
+      <h3>Add New Egg Item</h3>
+      <input type="text" id="newItemName" placeholder="Egg name" />
+      <input type="number" id="newItemPrice" placeholder="Price per egg" />
+      <button onclick="addNewItem()">Add Item</button>
+
+      <!-- UPDATE PRICE -->
+      <h3>Update Item Price</h3>
+      <input type="text" id="updateItemName" placeholder="Existing egg name" />
+      <input type="number" id="updateItemPrice" placeholder="New price" />
+      <button onclick="updateItemPrice()">Update Price</button>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- BRAND -->
+        <div class="footer-box">
+          <h3>EggMart</h3>
+          <p>Fresh & organic eggs delivered daily with quality assurance.</p>
+        </div>
+
+        <!-- LINKS -->
+        <div class="footer-box">
+          <h4>Quick Links</h4>
+          <a href="#">Home</a>
+          <a href="#">Shop</a>
+          <a href="#">Cart</a>
+          <a href="#">Admin</a>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="footer-box">
+          <h4>Contact</h4>
+          <p>📍 Mumbai, India</p>
+          <p>📞 +91 90000 00000</p>
+          <p>✉️ support@eggmart.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© 2026 EggMart. All Rights Reserved.</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
